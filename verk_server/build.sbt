@@ -16,7 +16,7 @@ libraryDependencies ++= Seq(
 
 libraryDependencies ++= Seq(
     "com.h2database" % "h2" % "1.4.191",
-    "org.hibernate" % "hibernate" % "3.2.0.cr5",
+    "org.hibernate" % "hibernate-core" % "5.2.5.Final",
     "mysql" % "mysql-connector-java" % "5.1.38",
     "org.hibernate" % "hibernate-entitymanager" % "5.1.0.Final" 
 )
