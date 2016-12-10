@@ -8,10 +8,17 @@
     <!-- A JPA Persistence Unit Verkiezingen-->
     <persistence-unit name="defaultPersistenceUnit"
         transaction-type="RESOURCE_LOCAL">
-        <!--<provider>org.hibernate.ejb.HibernatePersistence</provider> -->
+        <!--<provider>org.hibernate.ejb.HibernatePersistence</provider>   -->
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
 
-        <class>models</class>
+        <class>models.User</class>
+        <class>models.Subject</class>
+        <class>models.Result</class>
+        <class>models.Question</class>
+        <class>models.PartyAnswerCode</class>
+        <class>models.Party</class>
+        <class>models.AnswerCode</class>
+        <class>models.Answer</class>
 
         <properties>
             <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect" />

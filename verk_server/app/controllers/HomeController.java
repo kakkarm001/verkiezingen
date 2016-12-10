@@ -22,7 +22,7 @@ public class HomeController extends Controller {
 //        return ok(index.render("Your new application is ready."));
 //    }
 //    
-        @Transactional
+        //@Transactional
     public Result index() {
         return ok(index.render("A Transactional action"));
     }
