@@ -1,5 +1,7 @@
 package controllers;
 
+import play.db.jpa.Transactional;
+
 import play.mvc.*;
 
 import views.html.*;
@@ -16,8 +18,13 @@ public class HomeController extends Controller {
      * this method will be called when the application receives a
      * <code>GET</code> request with a path of <code>/</code>.
      */
+//    public Result index() {
+//        return ok(index.render("Your new application is ready."));
+//    }
+//    
+        @Transactional
     public Result index() {
-        return ok(index.render("Your new application is ready."));
+        return ok(index.render("A Transactional action"));
     }
 
 }
