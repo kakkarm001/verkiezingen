@@ -5,7 +5,7 @@ public class User {
 	private String user_email;
 	private String user_password;
 	private int user_age;
-	private int user_sex;
+	private String user_sex;
 	private String user_city;
 	private int user_active;
 	
@@ -35,10 +35,10 @@ public class User {
 	public void setUser_age(int user_age) {
 		this.user_age = user_age;
 	}
-	public int getUser_sex() {
+	public String getUser_sex() {
 		return user_sex;
 	}
-	public void setUser_sex(int user_sex) {
+	public void setUser_sex(String user_sex) {
 		this.user_sex = user_sex;
 	}
 	public String getUser_city() {
