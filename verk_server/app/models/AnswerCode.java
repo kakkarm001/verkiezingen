@@ -1,4 +1,4 @@
-package mypack;
+package models;
 
 public class AnswerCode {
 	private int answer_code_id;

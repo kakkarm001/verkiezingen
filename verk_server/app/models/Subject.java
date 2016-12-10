@@ -1,4 +1,4 @@
-package mypack;
+package models;
 
 public class Subject {
 	private int subject_id;

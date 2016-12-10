@@ -1,4 +1,4 @@
-package mypack;
+package models;
 
 public class Result {
 	private int result_id;

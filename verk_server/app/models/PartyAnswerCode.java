@@ -1,4 +1,4 @@
-package mypack;
+package models;
 
 public class PartyAnswerCode {
 	private int id;
