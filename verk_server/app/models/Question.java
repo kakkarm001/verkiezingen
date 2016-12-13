@@ -11,7 +11,7 @@ public class Question{
 	private String question;
 	private int subject_id;
 	private int party_id;
-	
+
 	@Id
     @Column(name = "id", nullable = false)
 	public int getQuestion_id() {

@@ -18,7 +18,7 @@ public class AnswerCode{
 	public void setAnswer_code_id(int answer_code_id) {
 		this.answer_code_id = answer_code_id;
 	}
-    
+
     @Column(name = "answer_code", nullable = false)
 	public int getAnswer_code() {
 		return answer_code;

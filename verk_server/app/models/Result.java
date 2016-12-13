@@ -10,7 +10,7 @@ public class Result{
 	private int result_id;
 	private int user_id;
 	private int party_id;
-	
+
 	@Id
     @Column(name = "id", nullable = false)
 	public int getResult_id() {
@@ -19,7 +19,7 @@ public class Result{
 	public void setResult_id(int result_id) {
 		this.result_id = result_id;
 	}
-    
+
     @Column(name = "user_id", nullable = false)
 	public int getUser_id() {
 		return user_id;

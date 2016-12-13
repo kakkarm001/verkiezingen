@@ -11,7 +11,7 @@ public class PartyAnswerCode{
 	private int question_id;
 	private int party_id;
 	private int answer_code_id;
-	
+
 	@Id
     @Column(name = "id", nullable = false)
 	public int getId() {

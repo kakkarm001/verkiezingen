@@ -8,7 +8,7 @@ import javax.persistence.*;
 @Table(name = "answers")
 public class Answer{
 
-    
+
 	private int answer_id;
 	private int user_id;
 	private int question_id;

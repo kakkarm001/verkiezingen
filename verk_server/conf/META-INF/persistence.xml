@@ -1,15 +1,16 @@
-<?xml version="1.0" encoding="UTF-8" ?>
 <persistence xmlns="http://java.sun.com/xml/ns/persistence"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://java.sun.com/xml/ns/persistence
-        http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd"
-    version="1.0">
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+             version="2.0">
 
     <!-- A JPA Persistence Unit Verkiezingen-->
     <persistence-unit name="defaultPersistenceUnit"
         transaction-type="RESOURCE_LOCAL">
-        <!--<provider>org.hibernate.ejb.HibernatePersistence</provider>   -->
-        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <provider>org.hibernate.ejb.HibernatePersistence</provider>
+        <non-jta-data-source>DefaultDS</non-jta-data-source>
+
+
+        <!--<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>-->
 
         <class>models.User</class>
         <class>models.Subject</class>
@@ -27,7 +28,7 @@
             <property name="hibernate.connection.username" value="verk" />
             <property name="hibernate.connection.password" value="password" />
 
-            <property name="hibernate.archive.autodetection" value="class, hbm" />
+            <!--<property name="hibernate.archive.autodetection" value="class, hbm" />-->
 
             <property name="hibernate.connection.provider_class" value="org.hibernate.connection.C3P0ConnectionProvider" />
             
