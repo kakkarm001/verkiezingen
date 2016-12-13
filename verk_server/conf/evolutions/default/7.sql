@@ -1,3 +1,4 @@
+# --- !Ups
 insert into answers (user_id, question_id, answer_code_id) values (7, 18, 4);
 insert into answers (user_id, question_id, answer_code_id) values (9, 95, 4);
 insert into answers (user_id, question_id, answer_code_id) values (7, 7, 3);

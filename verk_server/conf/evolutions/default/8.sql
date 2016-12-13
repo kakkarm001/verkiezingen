@@ -1,3 +1,4 @@
+# --- !Ups
 insert into partyanswercodes (question_id, party_id, answer_code_id) values (26, 10, 3);
 insert into partyanswercodes (question_id, party_id, answer_code_id) values (85, 10, 4);
 insert into partyanswercodes (question_id, party_id, answer_code_id) values (84, 10, 1);
