@@ -13,6 +13,7 @@ import javax.inject.Inject;
 import javax.persistence.EntityManager;
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
+import javax.persistence.criteria.Root;
 import java.util.List;
 
 import static play.libs.Json.toJson;
@@ -32,7 +33,7 @@ public class UserController extends Controller {
         return ok("ok");//views.html.index.render()
     }
 
-
+//
 //    @Transactional
 //    public Result addUser() {
 //        User user = formFactory.form(User.class).bindFromRequest().get();
@@ -42,14 +43,17 @@ public class UserController extends Controller {
 
     @Transactional(readOnly = true)
     public Result getUser() {
-//        EntityManager em = EntityManagerUtility.getEntityManager();
-//        CriteriaBuilder builder = em.getCriteriaBuilder();
-//        CriteriaQuery<Object> criteria = builder.createQuery();
-//        criteria.
+        EntityManager em = EntityManagerUtility.getEntityManager();
+        CriteriaBuilder builder = em.getCriteriaBuilder();
+
+        CriteriaQuery<User> criteria = builder.createQuery(User.class);
+        Root<User> userRoot = criteria.from( User.class );
+        criteria.select(userRoot.get("user_email"));
+        criteria.where(builder.equal(userRoot.get("user_id"),1));
+        List<User> users = em.createQuery(criteria).getResultList();
+        String userss = users.toString();
 //
-//        List<User> users =
-//
-                return ok("this is static");
+                return ok(userss);
     }
 
 }

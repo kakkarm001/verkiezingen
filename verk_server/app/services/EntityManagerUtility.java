@@ -8,6 +8,7 @@ import javax.persistence.Persistence;
 /**
  * Created by manish on 12/13/2016.
  */
+
 @Singleton
 public class EntityManagerUtility {
 
