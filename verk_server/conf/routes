@@ -14,3 +14,7 @@ GET     /assets/*file               controllers.Assets.versioned(path="/public",
 
 
 GET     /getUser                      controllers.UserController.getUser
+
+GET     /getSubjects                      controllers.SubjectController.getSubjects
+
+GET     /getQuestions                     controllers.QuestionController.getQuestions
